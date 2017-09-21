@@ -1,0 +1,16 @@
+html{
+    background-color: #FFEF88;
+}
+
+body{
+    max-width: 900px;
+    background-color:#F3F3F3;
+    color:#7A7A7A;
+    margin:0 auto;
+}
+
+#navigation li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
