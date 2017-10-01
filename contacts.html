@@ -3,53 +3,71 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
         <title>Main project</title>
     </head>
     <body>
         <header>
             <a href="index.html"><img id="logo" src="img/logo-header.png" alt="logo"/></a>
-            <input id="search-form" type="text" name="search" placeholder="Search..">
-        </header>
-        <nav>
-            <ul id="navigation">
+            <ul id="nav">
                 <li><a href="index.html">Main</a></li>
-                <li><a href="future-journeys.html">Future journeys</a></li>
+                <li><a href="future-journeys.html">Journeys</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
-            <hr>
-        </nav>
+            <a href="#nav"><img id="burger-menu" src="img/burger-menu.png" alt="burger menu"/></a>
+        </header>
+        <hr>
         <footer>
-            <div>
-                <h4>My contacts</h4>
-                <p>+38 067 353 08 48</p>
-                <p>ostapuk1105@gmail.com</p>
-                <p>Lviv, Antonycha str, 96</p>
-            </div>
-            <div>
-                <h4>Follow me</h4>
-            </div>
-            <div>
-                <h4>Write me right now</h4>
-                <form method="post" action="https://formspree.io/ostapuk1105@gmail.com">
-                    <label>
-                        <input type="text" name="visitor-name" placeholder="enter your name" required>
-                    </label>
-                    <br>
-                    <br>
-                    <label>
-                        <input type="email" name="visitor-email" placeholder="enter your email" required>
-                    </label>
-                    <br>
-                    <br>
-                    <label>
-                        <textarea name="visitor-message" rows="5" cols="60" placeholder="enter your message"></textarea>
-                    </label>
-                </form>
-            </div>
-            <div>
+            <div class="footer-contacts">
+                <div class="footer-contacts-left">
+                    <div class="my-contacts">
+                        <h3>My contacts:</h3>
+                        <img src="/img/icons/phone-icon.png" alt="phone icon"/>
+                        <p>+38 067 353 08 48</p>
+                        <img src="/img/icons/email-icon.png" alt="email icon"/>
+                        <p>ostapuk1105@gmail.com</p>
+                        <img src="/img/icons/home-icon.png" alt="home icon"/>
+                        <p>Lviv, Antonycha str, 96</p>
+                    </div>
+                    <div class="follow-me">
+                        <div>
+                            <h3>Follow me:</h3>
+                        </div>
+                        <div class="follow-me-social">
+                            <div>
+                                <img src="/img/icons/facebook-icon.png" alt="facebook icon"/>
+                            </div>
+                            <div>
+                                <img src="/img/icons/youtube-icon.png" alt="youtube icon"/>
+                            </div>
+                            <div>
+                                <img src="/img/icons/twitter-icon.png" alt="twitter icon"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="write-me">
+                    <h3>Write me right now:</h3>
+                    <form class="form" method="post" action="https://formspree.io/ostapuk1105@gmail.com">
+                        <label>
+                            <input type="text" name="visitor-name" placeholder="enter your name" required>
+                        </label>
+                        <br>
+                        <br>
+                        <label>
+                            <input type="email" name="visitor-email" placeholder="enter your email" required>
+                        </label>
+                        <br>
+                        <br>
+                        <label>
+                            <textarea name="visitor-message" placeholder="enter your message"></textarea>
+                        </label>
+                    </form>
+                </div>
+            </div>    
+            <div class="footer-image">
                 <img src="/img/footer/map-footer.png" alt="map-of-the-world"/>
             </div>
                 <hr>

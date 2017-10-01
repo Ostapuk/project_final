@@ -1,16 +1,165 @@
 html{
-    background-color: #FFEF88;
+
+    font-family: 'Courgette', cursive;
+    background-color: #B7D9F2;
 }
 
 body{
     max-width: 900px;
-    background-color:#F3F3F3;
-    color:#7A7A7A;
+    background-color: #F1F1F1;
+    color: #7C7C7C;
     margin:0 auto;
 }
+h1, h2, h3, h4{
+    text-align: center;
+}
+p{
+    margin: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+#logo{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#burger-menu{
+    display: none;
+    margin-right: -15px;
+    margin-bottom: 45px;
+}
+#burger-menu img{
+}
 
-#navigation li{
+
+#nav{
+    padding: 0;
+    margin: 0;
+    font-size: 120%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav li{
     list-style-type: none;
     display: inline;
-    margin: 10px;
 }
+#nav li a{
+    text-decoration: none;
+    color:#7A7A7A;
+}
+#nav li a:hover{
+    color: #2C67A1;
+}   
+main{
+    font-size: 120%;
+}
+
+#slider img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.articles img{
+    width: 430px;
+    float: left;
+    margin: 5px 15px;
+}
+footer{
+}
+.footer-contacts{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-center;
+    flex-wrap: wrap;
+}
+.footer-contacts-left{
+    width: 49%;
+}
+
+.my-contacts img{
+    width:25px;
+    float: left;
+}
+.footer-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;   
+}
+.follow-me{
+    text-align: center;
+}
+.follow-me-social{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.follow-me-social img{
+    width: 70px;
+}
+
+.write-me{
+    width: 49%;
+    text-align: center;
+}
+.form input, textarea{
+    width: 90%;
+    text-align: center;
+}
+#button{
+    width: 100px;
+}
+@media (max-width: 620px){
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #nav{
+        display: none;
+    }
+    #burger-menu{
+        display: flex;
+        align-items: flex-end;
+        width: 60px;
+        position: fixed;
+        top:10px;
+        right:20px;
+    }
+    .articles p{
+        text-align: justify;
+    }
+    .articles img{
+        float: none;
+        display: block;
+        width: 94%;
+        height: auto;
+        margin: auto;
+        text-align: justify;
+    }
+    .footer-contacts{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-contacts-left{
+        width: 100%;
+    }
+    .write-me{
+        width: 100%;
+    }
+}
+
