@@ -8,10 +8,11 @@ $(function() {
         $.ajax({
             url: "https://formspree.io/ostapuk1105@gmail.com",
             method: "POST",
-            data: { 
+            data: {
                 visitorName: $('#visitor-name').val(),
                 visitorEmail: $('#visitor-email').val(),
-                visitorMessage: $('#visitor-message').val()},
+                visitorMessage: $('#visitor-message').val()
+            },
             dataType: "json"
         }).done(function() {
             form.reset();

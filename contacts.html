@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Main project</title>
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img id="logo" src="img/logo-header.png" alt="logo"/></a>
-            <ul id="nav">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Main project</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="img/logo-header.png" alt="logo"/></a>
+        <ul id="nav">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="future-journeys.html">Journeys</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <div class=burger-menu-nav>
+            <a href="#burger-menu-nav"><img id="burger-menu-logo" src="img/burger-menu.png" alt="burger menu"/></a>
+            <ul class="burger-menu-nav-li">
                 <li><a href="index.html">Main</a></li>
                 <li><a href="future-journeys.html">Journeys</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
-            <a href="#nav"><img id="burger-menu" src="img/burger-menu.png" alt="burger menu"/></a>
-        </header>
-        <hr>
-        <footer>
-            <div class="footer-contacts">
-                <div class="footer-contacts-left">
-                    <div class="my-contacts">
-                        <h3>My contacts:</h3>
-                        <img src="/img/icons/phone-icon.png" alt="phone icon"/>
-                        <p>+38 067 353 08 48</p>
-                        <img src="/img/icons/email-icon.png" alt="email icon"/>
-                        <p>ostapuk1105@gmail.com</p>
-                        <img src="/img/icons/home-icon.png" alt="home icon"/>
-                        <p>Lviv, Antonycha str, 96</p>
-                    </div>
-                    <div class="follow-me">
-                        <div>
-                            <h3>Follow me:</h3>
-                        </div>
-                        <div class="follow-me-social">
-                            <div>
-                                <img src="/img/icons/facebook-icon.png" alt="facebook icon"/>
-                            </div>
-                            <div>
-                                <img src="/img/icons/youtube-icon.png" alt="youtube icon"/>
-                            </div>
-                            <div>
-                                <img src="/img/icons/twitter-icon.png" alt="twitter icon"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-                <div class="write-me">
-                    <h3>Write me right now:</h3>
-                    <form class="form" method="post" action="https://formspree.io/ostapuk1105@gmail.com">
-                        <label>
-                            <input type="text" name="visitor-name" placeholder="enter your name" required>
-                        </label>
-                        <br>
-                        <br>
-                        <label>
-                            <input type="email" name="visitor-email" placeholder="enter your email" required>
-                        </label>
-                        <br>
-                        <br>
-                        <label>
-                            <textarea name="visitor-message" placeholder="enter your message"></textarea>
-                        </label>
-                    </form>
+        </div>
+    </header>
+    <hr>
+    <footer>
+        <div class="footer-contacts">
+            <div class="footer-contacts-left">
+                <div class="my-contacts">
+                    <h3>My contacts:</h3>
+                    <img src="/img/icons/phone-icon.png" alt="phone icon" />
+                    <p>+38 067 353 08 48</p>
+                    <img src="/img/icons/email-icon.png" alt="email icon" />
+                    <p>ostapuk1105@gmail.com</p>
+                    <img src="/img/icons/home-icon.png" alt="home icon" />
+                    <p>Lviv, Antonycha str, 96</p>
                 </div>
-            </div>    
-            <div class="footer-image">
-                <img src="/img/footer/map-footer.png" alt="map-of-the-world"/>
+                <div class="follow-me">
+                    <div>
+                        <h3>Follow me:</h3>
+                    </div>
+                    <div class="follow-me-social">
+                        <div>
+                            <a href="#"><img src="/img/icons/facebook-icon.png" alt="facebook icon"/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="/img/icons/youtube-icon.png" alt="youtube icon"/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="/img/icons/twitter-icon.png" alt="twitter icon"/></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-                <hr>
-            <div>
-                <p>Anatolii Ostapuk 2017</p>
+            <div class="write-me">
+                <h3>Write me right now:</h3>
+                <form class="form" method="get" action="index.html">
+                    <label>
+                            <input type="text" name="visitor-name" id="visitor-name" placeholder="Enter your name" required>
+                        </label>
+                    <br>
+                    <br>
+                    <label>
+                            <input type="email" name="visitor-email" id="visitor-email" placeholder="Enter your email" required>
+                        </label>
+                    <br>
+                    <br>
+                    <label>
+                            <textarea name="visitor-message" id="visitor-message" placeholder="Enter your message"></textarea>
+                        </label>
+                    <br>
+                    <input id="button" type="submit" value="Send">
+                </form>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="footer-image">
+            <img src="/img/footer/map-footer.png" alt="map-of-the-world" />
+        </div>
+        <hr>
+        <div id="signature">
+            <p>Anatolii Ostapuk 2017</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/form.js"></script>
+</body>
+
 </html>
